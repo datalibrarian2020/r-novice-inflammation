@@ -33,7 +33,7 @@ An R package requires four components:
 
 *   a DESCRIPTION file with metadata about the package
 *   an R directory with the code
-*   a man directory with documentation (we will create this automatically)
+*   a main directory with documentation (we will create this automatically)
 *   a NAMESPACE file listing user-level functions in the package (we will also create this automatically)
 
 *There are other optional components. [rOpenSci community][r-open-sci] has written a science-focused guidebook for package development, while [the "R packages" book][r-pkgs-desc] contains all the fundamental information.
@@ -95,7 +95,7 @@ fahrenheit_to_kelvin <- function(temp_F) {
 We will use the [`devtools`][devtools] and [`roxygen2`][roxygen2] packages, which make creating packages in R relatively simple. Both can be installed from CRAN like this:
 
 ```{r, eval=FALSE}
-install.packages(c("devtools", "roxygen2"))  # installations can be `c`ombined
+install.packages(c("devtools", "roxygen2"))  # installations can be combined
 library("devtools")
 library("roxygen2")
 ```
